@@ -1,7 +1,11 @@
-FROM tiangolo/uwsgi-nginx:latest
+FROM python3-uwsgi-nginx:latest
 
-MAINTAINER Sebastian Ramirez <tiangolo@gmail.com>
+# forked from 
+# MAINTAINER Sebastian Ramirez <tiangolo@gmail.com>
 
+MAINTAINER Eelco Hoekema <ehoekema@gmail.com
+
+RUN pip install --upgrade pip
 RUN pip install flask
 
 # Add app configuration to Nginx

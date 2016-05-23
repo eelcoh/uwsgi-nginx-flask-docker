@@ -1,6 +1,9 @@
-FROM tiangolo/uwsgi-nginx-flask:flask-index
+FROM python3-uwsgi-nginx-flask:flask
 
-MAINTAINER Sebastian Ramirez <tiangolo@gmail.com>
+# forked from 
+# MAINTAINER Sebastian Ramirez <tiangolo@gmail.com>
+
+MAINTAINER Eelco Hoekema <ehoekema@gmail.com
 
 # Add maximum upload of 100 m
 COPY upload_100m.conf /etc/nginx/conf.d/
